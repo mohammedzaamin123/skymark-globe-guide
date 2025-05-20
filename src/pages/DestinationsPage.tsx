@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import PageLayout from '@/components/Layout/PageLayout';
@@ -76,7 +75,7 @@ const destinations: Destination[] = [
     universities: ['National University of Singapore', 'Nanyang Technological University', 'Singapore Management University', 'Singapore University of Technology and Design'],
     description: 'Singapore is a global education hub with world-class universities that offer a multicultural environment and strong connections to industry.',
     costs: 'Average tuition: SGD 20,000-45,000 per year. Living expenses: SGD 10,000-15,000 per year.',
-    visaInfo: 'You\'ll need a Student\'s Pass. Your school will apply for it on your behalf once you're accepted.',
+    visaInfo: "You'll need a Student's Pass. Your school will apply for it on your behalf once you're accepted.",
     scholarships: 'Singapore International Graduate Award, ASEAN Scholarships, and university-specific scholarships are available.'
   },
   {
