@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import PageLayout from '@/components/Layout/PageLayout';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -88,13 +87,13 @@ const faqs: FAQ[] = [
   {
     id: 'faq-13',
     question: 'How can I deal with culture shock when studying abroad?',
-    answer: 'Prepare by researching the culture before arriving, connect with international student groups, maintain contact with family while building a local support network, participate in orientation programs, join clubs/societies, be open to new experiences, and give yourself time to adjust. University counseling services can also help if you're struggling.',
+    answer: "Prepare by researching the culture before arriving, connect with international student groups, maintain contact with family while building a local support network, participate in orientation programs, join clubs/societies, be open to new experiences, and give yourself time to adjust. University counseling services can also help if you're struggling.",
     category: 'Living Abroad'
   },
   {
     id: 'faq-14',
     question: 'Is healthcare covered for international students?',
-    answer: 'Healthcare coverage varies by country. Many require international students to purchase health insurance. Some countries with universal healthcare systems may cover students (like the UK\'s NHS), while others require private insurance. Universities often offer health services on campus, but coverage levels differ.',
+    answer: "Healthcare coverage varies by country. Many require international students to purchase health insurance. Some countries with universal healthcare systems may cover students (like the UK's NHS), while others require private insurance. Universities often offer health services on campus, but coverage levels differ.",
     category: 'Living Abroad'
   },
   {
