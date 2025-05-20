@@ -76,9 +76,13 @@ router.post('/message', async (req, res) => {
       content: message
     });
     
+    // Check if there's a fine-tuned model available
+    const modelSetting = await db.collection('settings').findOne({ key: 'openaiModel' });
+    const model = modelSetting?.value || 'gpt-4o';
+    
     // Get response from OpenAI
     const completion = await openai.chat.completions.create({
-      model: 'gpt-4o',
+      model: model,
       messages: conversationHistory,
       temperature: 0.7,
       max_tokens: 1000

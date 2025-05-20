@@ -5,6 +5,7 @@ const cors = require('cors');
 const { MongoClient } = require('mongodb');
 const OpenAI = require('openai');
 const chatRoutes = require('./routes/chatRoutes');
+const trainingRoutes = require('./routes/trainingRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -42,6 +43,7 @@ async function connectToMongoDB() {
 
 // Routes
 app.use('/api/chat', chatRoutes);
+app.use('/api/training', trainingRoutes);
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {
